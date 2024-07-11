@@ -1,7 +1,7 @@
 import torch
 from torch import nn
 from torch.nn import functional as F
-from Backbone import get_backbone
+from models.Backbone import get_backbone
 
 class Flatten(nn.Module):  # override of the flatten class
     """

@@ -5,7 +5,8 @@ import numpy as np
 import sys
 import torch
 from prettytable import PrettyTable
-from visualization.Visualization import print_preds
+sys.path.append('/kaggle/input/modules/visualization')
+from Visualization import print_preds
 
 # Setup device agnostic code
 device = "cuda" if torch.cuda.is_available() else "cpu"

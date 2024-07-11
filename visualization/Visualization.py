@@ -16,7 +16,7 @@ def denormalize(image):
     return image
 
 
-def print_sample_dataset(dataset_type, num_batch, num_images_per_batch, dataloader_train='dataloader_train', dataloader_test='dataloader_tokyo'):
+def print_sample_dataset(dataset_type, num_batch, num_images_per_batch, dataloader_train, dataloader_test):
     """
     Prints a sample of images from the dataset.
 

@@ -28,7 +28,7 @@ def print_sample_dataset(dataset_type, num_batch, num_images_per_batch, dataload
     # Train images
     if dataset_type == 'train':
         batch_count = 0
-        for images, labels, place_id in getattr(dataloader_train):
+        for images, labels, place_id in dataloader_train:
             print(f"Batch:{batch_count}")
             # Make sure not to exceed the number of images in the batch
             num_images = min(num_images_per_batch, len(images))
@@ -51,7 +51,7 @@ def print_sample_dataset(dataset_type, num_batch, num_images_per_batch, dataload
     # Val and test images
     elif dataset_type == 'test' or dataset_type == 'val':
         batch_count = 0
-        for images, labels in getattr(dataloader_test): # mettere "dataloader_tokyo"
+        for images, labels in dataloader_test: 
             print(f"Batch:{batch_count}")
             # Make sure not to exceed the number of images in the batch
             num_images = min(num_images_per_batch, len(images))

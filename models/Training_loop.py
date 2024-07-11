@@ -94,7 +94,7 @@ def training_loop(epoch, model, dataset, dataloader, criterion, optimizer, miner
             descriptors = model(images.to(device)).cpu()
 
             if pre_miner is not None:  # Create proxy vectors
-                with torch.nograd():   # Exclude operations from the backpropagation
+                with torch.no_grad():   # Exclude operations from the backpropagation
                     num_tensori, *_ = descriptors.shape
                     for i in range(0, num_tensori - 4 + 1, 4):
                         place_images = descriptors[i:i+4]
@@ -151,7 +151,7 @@ def training_loop(epoch, model, dataset, dataloader, criterion, optimizer, miner
             descriptors = model(images.to(device)).cpu()
             
             # Create proxy vectors
-            with torch.nograd():  # Exclude operations from the backpropagation
+            with torch.no_grad():  # Exclude operations from the backpropagation
                 num_tensori, *_ = descriptors.shape
                 for i in range(0, num_tensori - 4 + 1, 4):
                     place_images = descriptors[i:i+4]
@@ -187,4 +187,3 @@ def training_loop(epoch, model, dataset, dataloader, criterion, optimizer, miner
     # Calculate the average training loss
     train_loss = train_loss / len(dataloader)
     print(f'Train Epoch: {epoch} Loss: {train_loss:.6f}')
-    

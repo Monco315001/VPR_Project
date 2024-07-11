@@ -2,7 +2,6 @@
 import faiss
 import faiss.contrib.torch_utils
 import numpy as np
-import sys
 import torch
 from prettytable import PrettyTable
 from visualization.Visualization import print_preds

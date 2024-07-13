@@ -2,7 +2,7 @@
 
 Official repository for the Machine learning and Deep learning project "Image Retrieval for Visual Geolocalization: Extensions and Experiments".
 
-* The project is also available on [[Kaggle](https://www.kaggle.com/code/giovannimonco22/image-retrieval-for-visual-geolocalization)].
+* The project is also available on [[Kaggle](https://www.kaggle.com/code/giovannimonco22/image-retrieval-for-visual-geolocalization)] with all the datasets loaded.
 * Training, Validation and Test can be run from `main.py`.
 * Relative report is [here](report/report.pdf).
 

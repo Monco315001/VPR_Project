@@ -10,7 +10,7 @@ Official repository for the Machine learning and Deep learning project "Image Re
 
 ### Datasets
 The `datasets` folder contains the following scripts:
-- `Train.py`: Class definition for the Train 
+- `Train.py`: Class definition for the Train.
 - `Test.py`: Class definition for the Validation and Test. 
 
 ### Models
